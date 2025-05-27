@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Capture A Browser's Tab Audio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Capture A Browser's Tab Audio</h1>
+
+    <div>
+      <button onclick="startCapture()" id="startBtn">
+        Start Audio Capture
+      </button>
+      <button onclick="stopRecording()" id="stopBtn" disabled>
+        Stop Audio Capture
+      </button>
+      <button onclick="playRecording()" id="playBtn" disabled>
+        Play Captured Audio
+      </button>
+    </div>
+
+    <audio id="audioPlayer" controls></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
